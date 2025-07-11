@@ -8,6 +8,6 @@ router.post('/verify-otp' , verifyOtp)
 router.get('/me' , isAuth , myProfile)
 router.put('/update-name' , isAuth , updateName)
 router.get('/all' , getAllUsers)
-router.get('/:id' , getUserById)
+router.get('/user/:id' , getUserById)
 
 export default router;
